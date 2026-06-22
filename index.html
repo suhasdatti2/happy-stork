@@ -390,22 +390,22 @@
         </p>
       </div>
 
-      <!-- TODO(next chat): drop real photos in via the --photo hook on each .showcase__media,
-           e.g. <div class="showcase__media bg--spirits" style="--photo:url('assets/img/spirits.jpg')"></div> -->
+      <!-- The first 5 slides are wired to real photos in assets/img/ (see assets/img/README.md
+           for the exact filenames). Until those files exist, each slide shows a warm gradient. -->
       <div class="showcase reveal" data-delay="1" aria-label="Photo showcase" aria-roledescription="carousel">
         <button class="showcase__arrow showcase__arrow--prev" type="button" aria-label="Previous">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
         <div class="showcase__viewport">
           <div class="showcase__track">
-            <figure class="showcase__item"><div class="showcase__media bg--spirits"></div><figcaption><span class="k">Liquor Store</span><span class="t">Premium Spirits</span></figcaption></figure>
+            <figure class="showcase__item"><div class="showcase__media bg--spirits" style="--photo:url('assets/img/whiskey.jpg')"></div><figcaption><span class="k">Whiskey Wall</span><span class="t">Whiskey &amp; Bourbon</span></figcaption></figure>
+            <figure class="showcase__item"><div class="showcase__media bg--curated" style="--photo:url('assets/img/gin-liqueurs.jpg')"></div><figcaption><span class="k">Aperitifs</span><span class="t">Gin &amp; Liqueurs</span></figcaption></figure>
+            <figure class="showcase__item"><div class="showcase__media bg--spirits" style="--photo:url('assets/img/bourbon.jpg')"></div><figcaption><span class="k">Top Shelf</span><span class="t">Bourbon &amp; Crown</span></figcaption></figure>
+            <figure class="showcase__item"><div class="showcase__media bg--lounge" style="--photo:url('assets/img/store.jpg')"></div><figcaption><span class="k">On Site</span><span class="t">The Liquor Store</span></figcaption></figure>
+            <figure class="showcase__item"><div class="showcase__media bg--patio" style="--photo:url('assets/img/tequila.jpg')"></div><figcaption><span class="k">100% Agave</span><span class="t">Premium Tequila</span></figcaption></figure>
             <figure class="showcase__item"><div class="showcase__media bg--beer"></div><figcaption><span class="k">Ice Cold</span><span class="t">Beer &amp; Seltzers</span></figcaption></figure>
             <figure class="showcase__item"><div class="showcase__media bg--wine"></div><figcaption><span class="k">Reds &amp; Bubbles</span><span class="t">Wine &amp; Champagne</span></figcaption></figure>
-            <figure class="showcase__item"><div class="showcase__media bg--lounge"></div><figcaption><span class="k">Dim &amp; Gold</span><span class="t">The Lounge</span></figcaption></figure>
             <figure class="showcase__item"><div class="showcase__media bg--gameday"></div><figcaption><span class="k">Sunday Ticket</span><span class="t">Game Day</span></figcaption></figure>
-            <figure class="showcase__item"><div class="showcase__media bg--patio"></div><figcaption><span class="k">Out Back</span><span class="t">Covered Patio</span></figcaption></figure>
-            <figure class="showcase__item"><div class="showcase__media bg--social"></div><figcaption><span class="k">After Dark</span><span class="t">DJ Nights</span></figcaption></figure>
-            <figure class="showcase__item"><div class="showcase__media bg--late"></div><figcaption><span class="k">'Til 5 AM</span><span class="t">Late-Night Delivery</span></figcaption></figure>
           </div>
         </div>
         <button class="showcase__arrow showcase__arrow--next" type="button" aria-label="Next">
