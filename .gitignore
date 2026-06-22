@@ -1,0 +1,6 @@
+# Build artifacts / generated deliverables
+*.zip
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
