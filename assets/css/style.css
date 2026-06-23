@@ -1744,31 +1744,17 @@ body.menu-open .menu a:nth-child(6) { animation-delay: 0.38s; }
   border-radius: var(--radius-lg);
   overflow: hidden;
   border: 1px solid var(--line);
-  isolation: isolate;
 }
 .showcase__media {
   position: absolute; inset: 0;
-  z-index: -2;
   background-color: #130d1a;
-  background-size: cover;
-  background-position: center;
-}
-.showcase__media::after {
-  content: "";
-  position: absolute; inset: 0;
   background-image: var(--photo, none);
   background-size: cover;
   background-position: center;
   transform: scale(1.05);
   transition: transform 0.9s var(--ease);
 }
-.showcase__item::after {
-  content: "";
-  position: absolute; inset: 0;
-  z-index: -1;
-  background: linear-gradient(to top, rgba(5,5,8,0.92) 6%, rgba(5,5,8,0.15) 55%, rgba(5,5,8,0.4));
-}
-.showcase__item:hover .showcase__media::after { transform: scale(1.13); }
+.showcase__item:hover .showcase__media { transform: scale(1.13); }
 .showcase__item figcaption {
   position: absolute;
   left: 0; right: 0; bottom: 0;
